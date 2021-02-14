@@ -1,5 +1,12 @@
+body{
+  /* background-color: #282c34; */
+  background-image: linear-gradient(to bottom left, #203139, #3D515A, #3d5866, #3D515A, #203139);
+}
+/* 203139 */
+/* 556D79 */
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {

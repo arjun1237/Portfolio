@@ -1,0 +1,39 @@
+.sideWrap{
+    background-color: #E2B144;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right: 0;
+}
+
+.sidecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0 25px;
+    text-align: center;
+}
+
+.sidecontainer a{
+    text-decoration: none;
+    color: #4a171ea8;
+}
+
+.sidecontainer p{
+    margin-top: 10px;
+    visibility: hidden;
+    text-transform: uppercase;
+}
+
+.sidecontainer > div{
+    cursor: pointer;
+}
+
+.sidecontainer > div:hover p{
+    visibility: visible;
+}
+
+.sidecontainer > div:hover a{
+    color: #4A171E;
+}

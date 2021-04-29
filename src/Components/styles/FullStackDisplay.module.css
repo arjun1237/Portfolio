@@ -1,0 +1,25 @@
+.fs_display{
+    position: fixed;
+    color: #e2b0445e;
+    top: 40%;
+    left: -180px;
+    font-size: 40px;
+    text-align: center;
+    transform: rotate(-90deg);  
+    
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+  
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+  
+    /* IE */
+    -ms-transform: rotate(-90deg);
+  
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    font-family: 'Exo', sans-serif;
+}

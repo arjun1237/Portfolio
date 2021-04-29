@@ -1,0 +1,52 @@
+img{
+    width: 400px;
+}
+
+.left{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left img{
+    margin-right: 100px;
+}
+
+.right{
+    font-family: 'Antonio', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.rightcontainer{
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.rightcontainer h2:first-of-type{
+    position: relative;
+    left: -280px;
+    top: -60px;
+    font-size: 100px;
+    color: #eee2c9;
+}
+
+.rightcontainer h1:first-of-type{
+    position: relative;
+    left: -100px;
+    top: -70px;
+    font-size: 70px;
+}
+
+.rightcontainer h2:last-of-type{
+    position: relative;
+    right: -232px;
+    top: -70px;
+    font-size: 30px;
+}
+
+.divwrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -6,7 +6,9 @@ export const Home = () => {
         <section className={styles.homewrap} id="home">
             <div className={styles.divwrap}>
                 <div className={styles.left}>
-                    <img src={process.env.PUBLIC_URL + '/resources/undraw_Hello_qnas.svg'} alt=""/>
+                    <div className={styles.homeimgwrap}>
+                        <img src={process.env.PUBLIC_URL + '/resources/undraw_Hello_qnas.svg'} alt=""/>
+                    </div>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.rightcontainer}>

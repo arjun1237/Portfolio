@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 8fr 3fr;
     margin: 0 145px 0 50px;
+    padding-top: 50px;
 }
 
 .left{
@@ -9,6 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    max-width: 1200px;
 }
 
 .left > div{

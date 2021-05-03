@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './styles/Projetcs.module.css'
 
 export const Projects = () => {
+
     return (
         <section id="projects">
             <div className={styles.projwrap}>
@@ -9,14 +10,16 @@ export const Projects = () => {
                     {projects.map(project => 
                             <div className={styles.project}>
                                 <div>
-                                    <img src={project.img} alt=""/>
+                                    <img src={project.img} alt={project.name}/>
                                 </div>
                                 <div className={styles.proj_title}>
-                                    <p>project name</p>
+                                    <p>{project.name}</p>
                                 </div>
                                 <div className={styles.proj_btns}>
-                                    <button>GITHUB</button>
-                                    <button>LIVE DEMO</button>
+                                    {project.github &&
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer">GITHUB</a>
+                                    }
+                                    <a href={project.live} target="_blank" rel="noopener noreferrer">LIVE DEMO</a>
                                 </div>
                             </div>
                         )
@@ -36,33 +39,39 @@ export const Projects = () => {
 
 const projects = [
     {
+        img: process.env.PUBLIC_URL + '/resources/masai-ref-img.png',
+        github: null,
+        live: "https://refresh.masai.tech/",
+        name: "Masai Refresh"
+    },
+    {
         img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
-        github: "",
-        live: ""
+        github: "https://github.com/arjun1237/chitrakala",
+        live: "",
+        name: "Chitrakala"
+    },
+    {
+        img: process.env.PUBLIC_URL + '/resources/ffx-img.png',
+        github: null,
+        live: "http://ffx.co.uk/",
+        name: "FFX E-comm"
+    },
+    {
+        img: process.env.PUBLIC_URL + '/resources/cardom-img.png',
+        github: "https://github.com/arjun1237/cardom",
+        live: "https://arjun1237.github.io/cardom/",
+        name: "Cardom"
+    },
+    {
+        img: process.env.PUBLIC_URL + '/resources/trivia-img.png',
+        github: "https://github.com/arjun1237/trivia_quiz",
+        live: "https://arjun1237.github.io/trivia_quiz/index.html",
+        name: "Trivia Quiz"
     },
     {
         img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
         github: "",
-        live: ""
-    },
-    {
-        img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
-        github: "",
-        live: ""
-    },
-    {
-        img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
-        github: "",
-        live: ""
-    },
-    {
-        img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
-        github: "",
-        live: ""
-    },
-    {
-        img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
-        github: "",
-        live: ""
+        live: "",
+        name: "Keyboard"
     }
 ]

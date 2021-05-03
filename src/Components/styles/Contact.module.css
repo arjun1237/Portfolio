@@ -5,6 +5,11 @@
 
 .contactWrap{
     width: fit-content;
+    text-align: center;
+}
+
+.contactWrap img{
+    margin: 0 auto 30px;
 }
 
 section{
@@ -61,4 +66,8 @@ table td{
     background-color: #E2B144;
     padding: 5px 10px;
     margin-right: 10px;
+}
+
+.main{
+    display: flex;
 }

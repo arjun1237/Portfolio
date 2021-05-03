@@ -8,6 +8,7 @@ export const Contact = () => {
         <section id="contact">
             <div className={styles.contactWrap}>
                 <h1>Hire me <span>NOW</span>, before someone else does!</h1>
+                <img src={process.env.PUBLIC_URL + '/resources/undraw_contact_us_15o2.svg'} alt=""/>
                 <table>
                     <tbody>
                         <tr>

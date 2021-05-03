@@ -69,9 +69,9 @@ const projects = [
         name: "Trivia Quiz"
     },
     {
-        img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
-        github: "",
-        live: "",
+        img: process.env.PUBLIC_URL + '/resources/keyboard-img.png',
+        github: "https://github.com/arjun1237/keyboard",
+        live: "https://arjun1237.github.io/keyboard/",
         name: "Keyboard"
     }
 ]

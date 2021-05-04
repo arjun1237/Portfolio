@@ -8,7 +8,7 @@ export const Projects = () => {
             <div className={styles.projwrap}>
                 <div className={styles.left}>
                     {projects.map(project => 
-                            <div className={styles.project}>
+                            <div className={styles.project} key={project.img}>
                                 <div>
                                     <img src={project.img} alt={project.name}/>
                                 </div>
@@ -45,9 +45,9 @@ const projects = [
         name: "Masai Refresh"
     },
     {
-        img: process.env.PUBLIC_URL + '/resources/undraw_developer_activity_bv83.svg',
+        img: process.env.PUBLIC_URL + '/resources/chitrakala-img.png',
         github: "https://github.com/arjun1237/chitrakala",
-        live: "",
+        live: "https://chitrakala-ten.vercel.app/",
         name: "Chitrakala"
     },
     {
@@ -69,9 +69,9 @@ const projects = [
         name: "Trivia Quiz"
     },
     {
-        img: process.env.PUBLIC_URL + '/resources/keyboard-img.png',
-        github: "https://github.com/arjun1237/keyboard",
-        live: "https://arjun1237.github.io/keyboard/",
-        name: "Keyboard"
+        img: process.env.PUBLIC_URL + '/resources/stimer-img.png',
+        github: "https://github.com/arjun1237/stimer",
+        live: "https://stimer.vercel.app/",
+        name: "Stimer"
     }
 ]

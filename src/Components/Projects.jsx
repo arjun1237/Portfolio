@@ -47,7 +47,7 @@ const projects = [
     {
         img: process.env.PUBLIC_URL + '/resources/chitrakala-img.png',
         github: "https://github.com/arjun1237/chitrakala",
-        live: "https://chitrakala-ten.vercel.app/",
+        live: "https://chitrakala-arjun1237.vercel.app/",
         name: "Chitrakala"
     },
     {
@@ -71,7 +71,7 @@ const projects = [
     {
         img: process.env.PUBLIC_URL + '/resources/stimer-img.png',
         github: "https://github.com/arjun1237/stimer",
-        live: "https://stimer.vercel.app/",
+        live: "https://stimer-arjun1237.vercel.app/",
         name: "Stimer"
     }
 ]
